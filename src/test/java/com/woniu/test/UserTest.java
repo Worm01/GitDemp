@@ -24,6 +24,8 @@ public class UserTest {
 		for (User user : list) {
 			System.out.println(user);
 		}
+		User u=session.selectOne("findOne",1);
+		System.out.println(u);
 		session.close();
 	}
 
