@@ -5,4 +5,7 @@
 	  	<select id="findAll" resultType="User">
 	  		select *from users
 	  	</select>
+		<select id="findOne" parameterType="int" resultType="User">
+	  		select *from users where uid=#{uid}
+	  	</select>
 	    </mapper>
