@@ -26,6 +26,11 @@ public class UserTest {
 		}
 		User u=session.selectOne("findOne",1);
 		System.out.println(u);
+		User user=new User();
+		user.setUname("赵云");
+		user.setUpsw("1111");
+		session.insert("save", user);
+		session.commit();
 		session.close();
 	}
 

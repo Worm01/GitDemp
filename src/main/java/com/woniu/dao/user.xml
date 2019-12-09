@@ -8,4 +8,7 @@
 		<select id="findOne" parameterType="int" resultType="User">
 	  		select *from users where uid=#{uid}
 	  	</select>
+	  	<insert id="save" parameterType="User">
+	  		insert into users values(null,#{uname},#{upsw})
+	  	</insert>
 	    </mapper>
