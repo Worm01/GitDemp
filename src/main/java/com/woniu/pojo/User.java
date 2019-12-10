@@ -4,6 +4,8 @@ public class User {
 	private Integer uid;
 	private String  uname;
 	private String upsw;
+	public User(){
+	}	
 	public Integer getUid() {
 		return uid;
 	}
